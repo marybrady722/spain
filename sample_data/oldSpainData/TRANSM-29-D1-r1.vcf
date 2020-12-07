@@ -1,0 +1,27 @@
+##fileformat=VCFv4.0
+##fileDate=20201105
+##source=lofreq call -f NC_045512.2.fasta --min-mq 10 --no-default-filter -r NC_045512.2:1-233 -o /tmp/lofreq2_call_parallelmo6r14pf/0.vcf.gz output/picard_bam_files/TRANSM-29-D1-r1_sort.bam 
+##reference=NC_045512.2.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_snvqual_20,Description="Minimum SNV Quality (Phred) 20">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_51,Description="Minimum SNV Quality (Phred) 51">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+NC_045512.2	1546	.	T	C	55	PASS	DP=13;AF=0.153846;SB=0;DP4=5,6,1,1
+NC_045512.2	4314	.	A	C	165	PASS	DP=26;AF=0.230769;SB=0;DP4=10,10,3,3
+NC_045512.2	6286	.	C	T	591	PASS	DP=16;AF=1.000000;SB=0;DP4=0,0,9,7
+NC_045512.2	6805	.	T	C	53	PASS	DP=13;AF=0.153846;SB=0;DP4=7,4,1,1
+NC_045512.2	6823	.	A	G	55	PASS	DP=13;AF=0.153846;SB=0;DP4=7,4,1,1
+NC_045512.2	11321	.	G	A	52	PASS	DP=15;AF=0.133333;SB=0;DP4=9,4,1,1
+NC_045512.2	18021	.	G	A	51	PASS	DP=17;AF=0.117647;SB=0;DP4=6,9,1,1
+NC_045512.2	28695	.	C	T	553	PASS	DP=62;AF=0.322581;SB=2;DP4=15,27,9,11
+NC_045512.2	29645	.	G	T	1793	PASS	DP=51;AF=1.000000;SB=0;DP4=0,0,23,28
